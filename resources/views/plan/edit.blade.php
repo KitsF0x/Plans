@@ -1,8 +1,8 @@
 @extends('layout')
 @section('content')
-    <form action="{{route('plan.store')}}" method="POST">
+    <form action="{{route('plan.update', $plan->id)}}" method="POST">
     @csrf
-    @method('POST')
+    @method('PATCH')
     <div class="d-flex justify-content-center ">
         <div class="col-6">
             <div class="text-center">
