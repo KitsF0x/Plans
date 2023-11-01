@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    @include('navigation')
     @yield('content')
 </body>
 </html>

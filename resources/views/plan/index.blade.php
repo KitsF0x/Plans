@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+@extends('layout')
+@section('content')
     <ul>
     @foreach ($plans as $plan)
         <li>
@@ -22,5 +16,4 @@
     </ul>
 
     <a href="{{route('plan.create')}}"><button>Create</button></a>
-</body>
-</html>
+@endsection
